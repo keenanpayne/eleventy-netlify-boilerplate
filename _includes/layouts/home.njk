@@ -37,13 +37,13 @@ section: page
       <div column="12 s5">
         <ul class="principle-list">
 
-          {% for item in sectionTwo.items %}
+          {% for principle in sectionTwo.principles %}
             <li>
               <span class="number">
                 0{{ loop.index }}
               </span>
               <span>
-                {{ item }}
+                {{ principle }}
               </span>
             </li>
           {% endfor %}
