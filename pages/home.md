@@ -23,5 +23,3 @@ sectionTwo:
 at.inc/ partners with founders at the earliest of stages to bring ideas to life with capital investment and hands-on support.
 
 Together, we build momentum and set a strong foundation to help you prosper and endure.
-
-youtube test
