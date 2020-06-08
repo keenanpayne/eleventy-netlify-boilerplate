@@ -17,6 +17,14 @@ sectionOne:
 sectionTwo:
   headline: Our guiding principles for operation
   description: test
+  principles:
+    - We gain a deep understanding of the founder’s vision.
+    - We don’t invest in product. We invest in people we admire and back their
+      mission 100%.
+    - '"We take an owner’s approach: we roll up our sleeves and share in the
+      responsibility of building an impactful company.'
+    - We act with the highest integrity, with total empathy for founders, LPs,
+      and partners.
 ---
 # With you from the start
 
