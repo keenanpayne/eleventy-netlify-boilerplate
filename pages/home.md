@@ -6,6 +6,9 @@ permalink: /
 eleventyNavigation:
   key: Home
   order: 0
+sectionOne:
+  headline: With you from the start
+  description: test
 ---
 # Welcome
 
