@@ -1,6 +1,21 @@
-<footer>
-  <small>
-    This project is maintained by <a href="https://www.danurbanowicz.com">Dan Urbanowicz</a>.
-    Check out the <a href="{{ pkg.repository.url }}">GitHub repo</a>.
-  </small>
+<footer class="main-footer">
+  <div container>
+    <p>268 Bush St. #4123 San Francisco, CA 94104</p>
+
+    <ul class="links">
+      <li><a href="#">Press Kit</a></li>
+      <li><a href="#"><img src="static/images/icon-twitter.svg"></a></li>
+      <li><a href="#"><img src="static/images/icon-linkedin.svg"></a></li>
+    </ul>
+  </div>
 </footer>
+
+<a class="chat-button" href="#"><img src="static/images/chat.svg"></a>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.10.2/underscore-min.min.js" integrity="sha256-+AhYWF5Swwvejg1wLQveGkNhyO9WR8gyv6hyhuTTnv8=" crossorigin="anonymous"></script>
+
+{% set js %}
+  {% include "assets/js/app.js" %}
+{% endset %}
+  
+<script>{{ js | jsmin | safe }}</script>

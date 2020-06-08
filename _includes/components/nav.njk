@@ -1,4 +1,4 @@
-<nav>
+{# <nav>
   {% set navPages = collections.all | eleventyNavigation %}
   <ul>
   {%- for entry in navPages %}
@@ -7,4 +7,34 @@
     </li>
   {%- endfor %}
   </ul>
+</nav> #}
+
+<nav class="main-nav">
+  <a class="logo" href="#intro" title="Top of the page">
+    {{ metadata.title }}
+  </a>
+
+  <div class="menu">
+    <div class="icon">
+      <img class="open" src="static/images/menu-open.svg" title="Open Menu">
+      <img class="close" src="static/images/menu-close.svg" title="Close Menu">
+    </div>
+
+    <ul class="list">
+      <li><a href="#companies">Companies</a></li>
+      <li><a href="#team">People</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+
+    <p class="address">268 Bush St. #4123 San Francisco, CA 94104</p>
+
+    <div class="social-links">
+      <a href="#">Press Kit</a>
+
+      <div>
+        <a href="#"><img src="static/images/icon-twitter.svg"></a>
+        <a href="#"><img src="static/images/icon-linkedin.svg"></a>
+      </div>
+    </div>
+  </div>
 </nav>
