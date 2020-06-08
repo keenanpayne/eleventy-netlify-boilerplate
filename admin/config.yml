@@ -35,5 +35,7 @@ collections:
         widget: "object"
         fields:
           - { label: "Headline", name: "headline", widget: "string" }
-          - { label: "Description", name: "description", widget: "markdown" }
-      - { label: "Body", name: "body", widget: "markdown" }
+          - label: "Principles"
+            name: "principles"
+            widget: "list"
+            field: {label: Text, name: text, widget: string}
