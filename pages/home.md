@@ -67,6 +67,7 @@ sectionFour:
       social:
         twitter: twitter_username
         linkedin: linkedin_username
+      image: /static/images/nadav.jpg
 ---
 # With you from the start
 
