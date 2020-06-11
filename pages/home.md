@@ -27,6 +27,12 @@ eleventyNavigation:
   order: 0
 sectionThree:
   headline: Companies we support
+  companies:
+    - name: SybarIP
+      industry: Enterprise Software
+      type: Lead
+      description: "Connecting IP and R&D teams on an IP learning platform for
+        enterprises that focus on innovation. "
 ---
 # With you from the start
 
