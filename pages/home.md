@@ -33,6 +33,26 @@ sectionThree:
       type: Lead
       description: "Connecting IP and R&D teams on an IP learning platform for
         enterprises that focus on innovation. "
+    - name: TheWild
+      industry: Enterprise Software
+      type: Lead
+      description: "Connecting IP and R&D teams on an IP learning platform for
+        enterprises that focus on innovation. "
+    - name: Beehive
+      industry: Enterprise Software
+      type: Lead
+      description: "Connecting IP and R&D teams on an IP learning platform for
+        enterprises that focus on innovation. "
+    - name: Cortex
+      industry: Enterprise Software
+      type: Lead
+      description: "Connecting IP and R&D teams on an IP learning platform for
+        enterprises that focus on innovation. "
+    - name: Test
+      industry: Industry
+      type: Investment Type
+      description: "Connecting IP and R&D teams on an IP learning platform for
+        enterprises that focus on innovation. "
 ---
 # With you from the start
 
