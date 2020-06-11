@@ -20,11 +20,45 @@ sectionTwo:
     - We act with the highest integrity, with total empathy for founders, LPs,
       and partners.
 layout: layouts/home.njk
-date: 2016-01-01T00:00:00.000Z
 permalink: /
+sectionFour:
+  headline: Our Team
+  description: We provide strategic, financial, and operational support and ride
+    the wave alongside you from Day 1.
+  team:
+    - name: Nadav Eylath
+      title: Founder, Managing Partner
+      location: San Francisco, CA
+      description: Nadav has worked with notable companies from his previous fun
+        including Netlify, Wecover, Honeybook, Future Family, Disclousures,
+        Peer5, and Betterhealh.
+      social:
+        twitter: twitter_username
+        linkedin: linkedin_username
+      image: /static/images/nadav.jpg
+    - name: Maor Gordon
+      title: Venture Partner
+      location: New York City
+    - name: Andy Campo
+      title: Venture Partner
+      location: Lisbon
+    - name: Dotan Schmidt
+      title: Venture Partner
+      location: Lisbon
+date: 2016-01-01T00:00:00.000Z
 eleventyNavigation:
   key: Home
   order: 0
+  item:
+    - text: Companies
+      location: "#companies"
+      title: See the companies we've backed
+    - text: People
+      location: "#people"
+      title: View partners for at.inc
+    - text: Contact
+      location: "#contact"
+      title: Get in touch with us
 sectionThree:
   headline: Companies we support
   companies:
@@ -61,30 +95,6 @@ sectionThree:
       industry: Industry
       type: Fun Times
       description: This is a test company
-sectionFour:
-  headline: Our Team
-  description: We provide strategic, financial, and operational support and ride
-    the wave alongside you from Day 1.
-  team:
-    - name: Nadav Eylath
-      title: Founder, Managing Partner
-      location: San Francisco, CA
-      description: Nadav has worked with notable companies from his previous fun
-        including Netlify, Wecover, Honeybook, Future Family, Disclousures,
-        Peer5, and Betterhealh.
-      social:
-        twitter: twitter_username
-        linkedin: linkedin_username
-      image: /static/images/nadav.jpg
-    - name: Maor Gordon
-      title: Venture Partner
-      location: New York City
-    - name: Andy Campo
-      title: Venture Partner
-      location: Lisbon
-    - name: Dotan Schmidt
-      title: Venture Partner
-      location: Lisbon
 sectionFive:
   headline: We want to be there at the very beginning.
   description: >-
