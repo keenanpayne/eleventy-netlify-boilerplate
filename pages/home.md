@@ -68,6 +68,9 @@ sectionFour:
         twitter: twitter_username
         linkedin: linkedin_username
       image: /static/images/nadav.jpg
+    - name: Maor Gordon
+      title: Venture Partner
+      location: New York City
 sectionFive:
   headline: We want to be there at the very beginning.
   description: >-
