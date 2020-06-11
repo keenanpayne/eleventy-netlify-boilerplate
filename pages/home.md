@@ -1,4 +1,5 @@
 ---
+title: Home
 sectionOne:
   headline: With you from the start
   description: >-
@@ -19,7 +20,6 @@ sectionTwo:
     - We act with the highest integrity, with total empathy for founders, LPs,
       and partners.
 layout: layouts/home.njk
-title: Home
 date: 2016-01-01T00:00:00.000Z
 permalink: /
 eleventyNavigation:
@@ -53,6 +53,17 @@ sectionThree:
       type: Investment Type
       description: "Connecting IP and R&D teams on an IP learning platform for
         enterprises that focus on innovation. "
+sectionFour:
+  headline: Our Team
+  description: We provide strategic, financial, and operational support and ride
+    the wave alongside you from Day 1.
+  team:
+    - name: Nadav Eylath
+      title: Founder, Managing Partner
+      location: San Francisco, CA
+      description: Nadav has worked with notable companies from his previous fun
+        including Netlify, Wecover, Honeybook, Future Family, Disclousures,
+        Peer5, and Betterhealh.
 ---
 # With you from the start
 
