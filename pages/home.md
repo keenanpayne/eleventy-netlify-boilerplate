@@ -53,6 +53,14 @@ sectionThree:
       type: Investment Type
       description: "Connecting IP and R&D teams on an IP learning platform for
         enterprises that focus on innovation. "
+    - name: Another Test
+      industry: Industries
+      type: Lead
+      description: This is a test company
+    - name: Just one more
+      industry: Industry
+      type: Fun Times
+      description: This is a test company
 sectionFour:
   headline: Our Team
   description: We provide strategic, financial, and operational support and ride
