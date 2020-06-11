@@ -59,6 +59,16 @@ eleventyNavigation:
     - text: Contact
       location: "#contact"
       title: Get in touch with us
+  items:
+    - text: Companies
+      location: "#companies"
+      title: See the companies we support
+    - text: People
+      location: "#people"
+      title: See the folks that make at.inc wonderful
+    - text: Contact
+      location: "#contact"
+      title: Get in touch with us
 sectionThree:
   headline: Companies we support
   companies:
