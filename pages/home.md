@@ -21,12 +21,6 @@ sectionTwo:
 layout: layouts/home.njk
 title: at.inc/
 permalink: /
-footer:
-  address: "268 Bush St. #4123 San Francisco, CA 94104"
-  press: "#"
-  title: test
-  twitter: atinc
-  linkedin: atinc
 sectionFour:
   headline: Our Team
   description: We provide strategic, financial, and operational support and ride
@@ -52,6 +46,11 @@ sectionFour:
       title: Venture Partner
       location: Lisbon
 date: 2016-01-01T00:00:00.000Z
+company:
+  address: "268 Bush St. #4123 San Francisco, CA 94104"
+  press: "#press"
+  twitter: atinc
+  linkedin: atinc
 navigation:
   - text: Companies
     location: "#companies"
@@ -133,6 +132,12 @@ eleventyNavigation:
     - text: Contact
       location: "#contact"
       title: Get in touch with us
+footer:
+  address: "268 Bush St. #4123 San Francisco, CA 94104"
+  press: "#"
+  title: test
+  twitter: atinc
+  linkedin: atinc
 ---
 # With you from the start
 
