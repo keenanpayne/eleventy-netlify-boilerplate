@@ -25,6 +25,8 @@ footer:
   address: "268 Bush St. #4123 San Francisco, CA 94104"
   press: "#"
   title: test
+  twitter: atinc
+  linkedin: atinc
 sectionFour:
   headline: Our Team
   description: We provide strategic, financial, and operational support and ride
