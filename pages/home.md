@@ -19,7 +19,7 @@ sectionTwo:
     - We act with the highest integrity, with total empathy for founders, LPs,
       and partners.
 layout: layouts/home.njk
-title: Home
+title: at.inc/
 permalink: /
 sectionFour:
   headline: Our Team
@@ -49,10 +49,13 @@ date: 2016-01-01T00:00:00.000Z
 navigation:
   - text: Companies
     location: "#companies"
+    title: See the companies we support
   - text: People
     location: "#people"
+    title: See the people we work with
   - text: Contact
     location: "#contact"
+    title: Get in touch with us
 sectionThree:
   headline: Companies we support
   companies:
