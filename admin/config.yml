@@ -18,6 +18,17 @@ collections:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Permalink", name: "permalink", widget: "string" }
 
+      # Company Information
+      - label: "Company Information"
+        name: "company"
+        widget: "object"
+        collapsed: true
+        fields:
+          - { label: "Address", name: "address", widget: "string" }
+          - { label: "Press Kit", name: "press", widget: "string", required: false }
+          - { label: "Twitter", name: "twitter", widget: "string", required: false }
+          - { label: "LinkedIn", name: "linkedin", widget: "string", required: false }
+
       # Global Navigation
       - label: "Navigation"
         name: "navigation"
@@ -83,8 +94,8 @@ collections:
                 widget: object
                 required: false
                 fields:
-                  - { label: Twitter, name: twitter, widget: string }
-                  - { label: LinkedIn, name: linkedin, widget: string }
+                  - { label: Twitter, name: twitter, widget: string, required: false }
+                  - { label: LinkedIn, name: linkedin, widget: string, required: false }
 
       # Section Five
       - label: "Section Five"

@@ -1,3 +1,8 @@
+{% set press = company.press %}
+{% set twitter = company.twitter %}
+{% set linkedin = company.linkedin %}
+{% set address = company.address %}
+
 <nav class="main-nav">
   <a class="logo" href="#intro" title="Top of the page">
     {{ metadata.title }}
@@ -19,14 +24,27 @@
       {% endfor %}
     </ul>
 
-    <p class="address">268 Bush St. #4123 San Francisco, CA 94104</p>
+    <p class="address">
+      {{ address }}
+    </p>
 
     <div class="social-links">
-      <a href="#">Press Kit</a>
+      <a href="{{ press }}" title="View the at.inc press kit">
+        Press Kit
+      </a>
 
       <div>
-        <a href="#"><img src="static/images/icon-twitter.svg"></a>
-        <a href="#"><img src="static/images/icon-linkedin.svg"></a>
+        {% if twitter %}
+          <a href="{{ twitter }}" title="Follow at.inc on Twitter">
+            <img src="static/images/icon-twitter.svg">
+          </a>
+        {% endif %}
+        
+        {% if linkedin %}
+          <a href="{{ linkedin }}" title="Follow at.inc on LinkedIn">
+            <img src="static/images/icon-linkedin.svg">
+          </a>
+        {% endif %}
       </div>
     </div>
   </div>
