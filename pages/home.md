@@ -1,5 +1,4 @@
 ---
-title: Home
 sectionOne:
   headline: With you from the start
   description: >-
@@ -20,6 +19,7 @@ sectionTwo:
     - We act with the highest integrity, with total empathy for founders, LPs,
       and partners.
 layout: layouts/home.njk
+title: Home
 permalink: /
 sectionFour:
   headline: Our Team
@@ -49,13 +49,10 @@ date: 2016-01-01T00:00:00.000Z
 navigation:
   - text: Companies
     location: "#companies"
-    title: See the companies we've backed
   - text: People
     location: "#people"
-    title: View partners for at.inc
   - text: Contact
     location: "#contact"
-    title: Get in touch with us
 sectionThree:
   headline: Companies we support
   companies:
@@ -104,6 +101,29 @@ sectionFive:
     text: Say Hello
     location: "#"
     title: Get in touch with at.inc
+eleventyNavigation:
+  key: Home
+  order: 0
+  item:
+    - text: Companies
+      location: "#companies"
+      title: See the companies we've backed
+    - text: People
+      location: "#people"
+      title: View partners for at.inc
+    - text: Contact
+      location: "#contact"
+      title: Get in touch with us
+  items:
+    - text: Companies
+      location: "#companies"
+      title: See the companies we support
+    - text: People
+      location: "#people"
+      title: See the folks that make at.inc wonderful
+    - text: Contact
+      location: "#contact"
+      title: Get in touch with us
 ---
 # With you from the start
 
