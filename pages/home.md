@@ -64,6 +64,9 @@ sectionFour:
       description: Nadav has worked with notable companies from his previous fun
         including Netlify, Wecover, Honeybook, Future Family, Disclousures,
         Peer5, and Betterhealh.
+      social:
+        twitter: twitter_username
+        linkedin: linkedin_username
 ---
 # With you from the start
 
