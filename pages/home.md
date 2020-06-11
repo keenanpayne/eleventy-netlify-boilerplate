@@ -72,9 +72,8 @@ sectionFive:
   headline: We want to be there at the very beginning.
   description: >-
     We see the founders who are courageous enough to design bold technology at a
-    global scale, even when that technology is just an idea.\
+    global scale, even when that technology is just an idea.
 
-    \
 
     Whether you’re at incorporation, at the seed stage, or still at your day job setting a vision for something new, we want to hear what makes you ready to dive in. And be sure, we are eager to invest at this stage.
   link:
