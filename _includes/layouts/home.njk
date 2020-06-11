@@ -3,6 +3,7 @@ layout: layouts/base.njk
 section: page
 ---
 
+{# Section One #}
 <header id="intro" class="main-header" container="narrow">
   <div grid="center">
     <div column="12 s7">
@@ -11,7 +12,7 @@ section: page
       </h1>
 
       <p class="section-intro">
-        {{ sectionOne.description | safe }}
+        {{ sectionOne.description | nl2br | safe }}
       </p>
     </div>
 
@@ -25,6 +26,7 @@ section: page
   </a>
 </header>
 
+{# Section Two #}
 <section id="principles" class="principles-section">
   <div container="narrow">
     <div grid>
@@ -56,7 +58,7 @@ section: page
     </div>
 </section>
 
-{# 
+{# Section Three #}
 <section id="companies" class="companies-section">
   <div container="narrow">
     <div grid="center">
@@ -110,6 +112,7 @@ section: page
   </div>
 </section>
 
+{# Section Four #}
 <section id="team" class="team-section" container="narrow">
   <div grid>
     <div column="12 s7">
@@ -119,7 +122,7 @@ section: page
         </h1>
         
         <p class="section-intro">
-          {{ sectionFour.description }}
+          {{ sectionFour.description | nl2br | safe }}
         </p>
       </div>
     </div>
@@ -128,8 +131,7 @@ section: page
       {% for person in sectionFour.team %}
         {% set name = person.name %}
         {% set image = person.image %}
-        {% set twitter = person.twitter %}
-        {% set linkedin = person.linkedin %}
+        {% set social = person.social %}
         {% set title = person.title %}
         {% set location = person.location %}
         {% set description = person.description %}
@@ -137,7 +139,7 @@ section: page
         <article class="team-member">
           {% if image %}
             <div class="picture">
-              <img src="static/images/{{ image }}" alt="{{ name }}">
+              <img src="{{ image }}" alt="{{ name }}">
             </div>
           {% endif %}
 
@@ -146,7 +148,10 @@ section: page
               {{ person.name }}
             </h3>
 
-            {% if twitter or linkedin %}
+            {% if social %}
+              {% set twitter = social.twitter %}
+              {% set linkedin = social.linkedin %}
+
               <ul class="social-links">
                 {% if twitter %}
                   <li>
@@ -168,19 +173,19 @@ section: page
           </header>
           
           {% if title or location %}
-          <ul class="meta">
-            {% if title %}
-              <li class="title">
-                {{ title }}
-              </li>
-            {% endif %}
+            <ul class="meta">
+              {% if title %}
+                <li class="title">
+                  {{ title }}
+                </li>
+              {% endif %}
 
-            {% if location %}
-              <li class="location">
-                {{ location }}
-              </li>
-            {% endif %}
-          </ul>
+              {% if location %}
+                <li class="location">
+                  {{ location }}
+                </li>
+              {% endif %}
+            </ul>
           {% endif %}
 
           {% if description %}
@@ -194,6 +199,7 @@ section: page
   </div>
 </section>
 
+{# Section Five #}
 <section id="contact" class="contact-section" container="narrow">
   <div grid="center">
     <div column="12 s5 #2 s#1">
@@ -202,22 +208,22 @@ section: page
       </h2>
 
       <p class="section-intro">
-        {{ sectionFive.description | safe }}
+        {{ sectionFive.description | nl2br | safe }}
       </p>
 
       <p class="huge-cta-mobile">
-        <a href="{{ sectionFive.cta_link }}" title="{{ cta_title }}">
-          {{ sectionFive.cta_text }}
+        <a href="{{ sectionFive.link.location }}" title="{{ sectionFive.link.title }}">
+          {{ sectionFive.link.text }}
         </a>
       </p>
     </div>
 
-    <a href="{{ sectionFive.cta_link }}" column="12 s7 #1 s#2" class="-right" title="{{ cta_title }}">
+    <a href="{{ sectionFive.link.location }}" column="12 s7 #1 s#2" class="-right" title="{{ sectionFive.link.title }}">
       <img class="-fluid" src="static/images/illustration-4.svg">
 
       <p class="huge-cta">
-        {{ sectionFive.cta_text }}
+        {{ sectionFive.link.text }}
       </p>
     </a>
   </div>
-</section> #}
+</section>

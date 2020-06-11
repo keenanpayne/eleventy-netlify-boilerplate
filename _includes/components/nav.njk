@@ -1,14 +1,3 @@
-{# <nav>
-  {% set navPages = collections.all | eleventyNavigation %}
-  <ul>
-  {%- for entry in navPages %}
-    <li>
-      <a href="{{ entry.url | url }}"{% if entry.url == page.url %} data-current="current item"{% endif %}>{{ entry.title }}</a>
-    </li>
-  {%- endfor %}
-  </ul>
-</nav> #}
-
 <nav class="main-nav">
   <a class="logo" href="#intro" title="Top of the page">
     {{ metadata.title }}
@@ -21,9 +10,13 @@
     </div>
 
     <ul class="list">
-      <li><a href="#companies">Companies</a></li>
-      <li><a href="#team">People</a></li>
-      <li><a href="#contact">Contact</a></li>
+      {% for item in navigation %}
+        <li>
+          <a href="{{ item.location }}" title="{{ item.title }}">
+            {{ item.text }}
+          </a>
+        </li>
+      {% endfor %}
     </ul>
 
     <p class="address">268 Bush St. #4123 San Francisco, CA 94104</p>

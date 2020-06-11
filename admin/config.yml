@@ -16,20 +16,26 @@ collections:
     slug: "{{slug}}"
     fields:
       - { label: "Title", name: "title", widget: "string" }
-      - { label: "Publish Date", name: "date", widget: "datetime" }
       - { label: "Permalink", name: "permalink", widget: "string" }
-      - label: "Navigation" # https://www.11ty.dev/docs/plugins/navigation/
-        name: "eleventyNavigation"
-        widget: "object"
+
+      # Global Navigation
+      - label: "Navigation"
+        name: "navigation"
+        widget: "list"
         fields:
-          - { label: "Key", name: "key", widget: "string" }
-          - { label: "Order", name: "order", widget: "number", default: 0 }
+          - { label: "Text", name: "text", widget: "string" }
+          - { label: "Location", name: "location", widget: "string" }
+          - { label: "Title", name: "title", widget: "string" }
+      
+      # First Section
       - label: "Section One"
         name: "sectionOne"
         widget: "object"
         fields:
           - { label: "Headline", name: "headline", widget: "string" }
           - { label: "Description", name: "description", widget: "markdown" }
+      
+      # Second Section
       - label: "Section Two"
         name: "sectionTwo"
         widget: "object"
@@ -38,21 +44,59 @@ collections:
           - label: "Principles"
             name: "principles"
             widget: "list"
-            field: {label: Text, name: text, widget: string}
+            field: { label: Text, name: text, widget: string }
+
+      # Section Three
       - label: "Section Three"
         name: "sectionThree"
         widget: "object"
         fields:
           - { label: "Headline", name: "headline", widget: "string" }
-          - label: "Testimonials"
-            name: "testimonials"
+          - label: "Companies"
+            name: "companies"
             widget: "list"
-            summary: '{{fields.quote}} - {{fields.author.name}}'
+            summary: '{{ fields.name }}'
             fields:
-              - {label: Quote, name: quote, widget: string, default: "Everything is awesome!"}
-              - label: Author
-                name: author
+              - { label: Name, name: name, widget: string }
+              - { label: Industry, name: industry, widget: string }
+              - { label: Type, name: type, widget: string }
+              - { label: Description, name: description, widget: string }
+
+      # Section Four
+      - label: "Section Four"
+        name: "sectionFour"
+        widget: "object"
+        fields:
+          - { label: "Headline", name: "headline", widget: "string" }
+          - { label: "Description", name: "description", widget: "string" }
+          - label: "Team"
+            name: "team"
+            widget: "list"
+            summary: '{{ fields.name }}'
+            fields:
+              - { label: Name, name: name, widget: string }
+              - { label: Title, name: title, widget: string }
+              - { label: location, name: location, widget: string }
+              - { label: Description, name: description, widget: string, required: false }
+              - label: Social
+                name: social
                 widget: object
+                required: false
                 fields:
-                  - {label: Name, name: name, widget: string, default: "Emmet"}
-                  - {label: Avatar, name: avatar, widget: image, default: "/img/emmet.jpg"}
+                  - { label: Twitter, name: twitter, widget: string }
+                  - { label: LinkedIn, name: linkedin, widget: string }
+
+      # Section Five
+      - label: "Section Five"
+        name: "sectionFive"
+        widget: "object"
+        fields:
+          - { label: "Headline", name: "headline", widget: "string" }
+          - { label: "Description", name: "description", widget: "string" }
+          - label: "Link"
+            name: "link"
+            widget: "object"
+            fields:
+              - { label: Text, name: text, widget: string }
+              - { label: Location, name: location, widget: string }
+              - { label: Title, name: title, widget: string }

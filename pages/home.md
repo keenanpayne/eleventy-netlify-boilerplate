@@ -46,19 +46,16 @@ sectionFour:
       title: Venture Partner
       location: Lisbon
 date: 2016-01-01T00:00:00.000Z
-eleventyNavigation:
-  key: Home
-  order: 0
-  item:
-    - text: Companies
-      location: "#companies"
-      title: See the companies we've backed
-    - text: People
-      location: "#people"
-      title: View partners for at.inc
-    - text: Contact
-      location: "#contact"
-      title: Get in touch with us
+navigation:
+  - text: Companies
+    location: "#companies"
+    title: See the companies we've backed
+  - text: People
+    location: "#people"
+    title: View partners for at.inc
+  - text: Contact
+    location: "#contact"
+    title: Get in touch with us
 sectionThree:
   headline: Companies we support
   companies:
