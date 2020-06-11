@@ -71,6 +71,12 @@ sectionFour:
     - name: Maor Gordon
       title: Venture Partner
       location: New York City
+    - name: Andy Campo
+      title: Venture Partner
+      location: Lisbon
+    - name: Dotan Schmidt
+      title: Venture Partner
+      location: Lisbon
 sectionFive:
   headline: We want to be there at the very beginning.
   description: >-
