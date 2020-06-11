@@ -1,11 +1,4 @@
 ---
-layout: layouts/home.njk
-title: Home
-date: 2016-01-01T00:00:00.000Z
-permalink: /
-eleventyNavigation:
-  key: Home
-  order: 0
 sectionOne:
   headline: With you from the start
   description: >-
@@ -25,6 +18,15 @@ sectionTwo:
       responsibility of building an impactful company.'
     - We act with the highest integrity, with total empathy for founders, LPs,
       and partners.
+layout: layouts/home.njk
+title: Home
+date: 2016-01-01T00:00:00.000Z
+permalink: /
+eleventyNavigation:
+  key: Home
+  order: 0
+sectionThree:
+  headline: Companies we support
 ---
 # With you from the start
 
