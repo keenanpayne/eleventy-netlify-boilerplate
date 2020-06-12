@@ -10,14 +10,14 @@
 
   <div class="menu">
     <div class="icon">
-      <img class="open" src="static/images/menu-open.svg" title="Open Menu">
-      <img class="close" src="static/images/menu-close.svg" title="Close Menu">
+      <img class="open" src="static/images/ui/menu-open.svg" title="Open Menu">
+      <img class="close" src="static/images/ui/menu-close.svg" title="Close Menu">
     </div>
 
     <ul class="list">
       {% for item in navigation %}
         <li>
-          <a href="{{ item.location }}" title="{{ item.title }}">
+          <a class="nav-link {% if loop.index == 1 %} -inverted {% endif %}" href="{{ item.location }}" title="{{ item.title }}">
             {{ item.text }}
           </a>
         </li>
@@ -33,19 +33,21 @@
         Press Kit
       </a>
 
-      <div>
-        {% if twitter %}
-          <a href="{{ twitter }}" title="Follow at.inc on Twitter">
-            <img src="static/images/icon-twitter.svg">
-          </a>
-        {% endif %}
-        
-        {% if linkedin %}
-          <a href="{{ linkedin }}" title="Follow at.inc on LinkedIn">
-            <img src="static/images/icon-linkedin.svg">
-          </a>
-        {% endif %}
-      </div>
+      {% if twitter or linkedin %}
+        <div>
+          {% if twitter %}
+            <a href="{{ twitter }}" title="Follow at.inc on Twitter">
+              <img src="static/images/ui/icon-twitter.svg">
+            </a>
+          {% endif %}
+          
+          {% if linkedin %}
+            <a href="{{ linkedin }}" title="Follow at.inc on LinkedIn">
+              <img src="static/images/ui/icon-linkedin.svg">
+            </a>
+          {% endif %}
+        </div>
+      {% endif %}
     </div>
   </div>
 </nav>

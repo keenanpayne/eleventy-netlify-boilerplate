@@ -9,12 +9,13 @@
   </title>
 
   <script async src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap" rel="stylesheet">
   
   {% set css %}
-    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap" rel="stylesheet">
-
     {% include "assets/css/main.css" %}
   {% endset %}
 
-  <style>{{ css | cssmin | safe }}</style>
+  <style>
+    {{ css | cssmin | safe }}
+  </style>
 </head>

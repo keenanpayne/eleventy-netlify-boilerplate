@@ -39,12 +39,10 @@
     "uglify-es": "^3.3.9"
   },
   "scripts": {
-    "build": "npx eleventy",
-    "watch": "npx eleventy --watch --serve",
     "debug": "DEBUG=* npx eleventy",
-    "assets:js": "babel assets/js/ -d _site/_includes/assets/js/",
+    "assets:js": "babel assets/js/ -d _includes/assets/js/",
     "assets:images": "node utils/images.js",
-    "assets:css": "postcss assets/css/main.pcss > _site/_includes/assets/css/main.css",
+    "assets:css": "postcss assets/css/main.pcss > _includes/assets/css/main.css",
     "assets:build:dev": "npm run assets:images && watch 'npm run assets:css & npm run assets:js' 'assets/'",
     "assets:build:prod": "npm run assets:images & npm run assets:css & npm run assets:js",
     "app:build:dev": "npm run assets:build:dev & eleventy --watch --serve",

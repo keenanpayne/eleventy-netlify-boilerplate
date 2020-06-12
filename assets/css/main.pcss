@@ -1,3 +1,9 @@
+@font-face {
+  font-family: 'Folio Std Light';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Folio Std Light'), url('static/fonts/Folio-Std-Light.woff') format('woff');
+}
 
 *,
 ::before,
@@ -153,6 +159,7 @@ body {
 }
 
 section {
+  overflow-x: hidden;
   padding-top: var(--spacing-section);
 }
 
@@ -268,6 +275,22 @@ Components
   }
 }
 
+.nav-link {
+  transition: background-color 0.3s ease;
+  user-select: none;
+
+  &.-active,
+  &:hover,
+  &:active {
+    padding: 0 0.5em 0.25em;
+    background-color: var(--color-primary);
+
+    &.-inverted {
+      color: var(--color-text);
+    }
+  }
+}
+
 .main-header {
   padding-top: var(--spacing-section);
   padding-bottom: 4rem;
@@ -305,7 +328,7 @@ Components
     line-height: 1;
 
     &::after {
-      content: url(images/arrow-right.svg);
+      content: url('static/images/ui/arrow-right.svg');
       position: absolute;
       top: 0.3rem;
       right: 0.5rem;
@@ -345,7 +368,7 @@ Components
       }
 
       &::after {
-        content: url('images/arrow-right-green.svg');
+        content: url('static/images/ui/arrow-right-green.svg');
         position: absolute;
         top: 50%;
         right: 0;
@@ -421,11 +444,11 @@ Components
     }
 
     .title {
-      list-style-image: url('images/icon-title.svg');
+      list-style-image: url('static/images/ui/icon-title.svg');
     }
 
     .location {
-      list-style-image: url('images/icon-location.svg');
+      list-style-image: url('static/images/ui/icon-location.svg');
     }
   }
 
@@ -466,14 +489,14 @@ Components
       text-decoration: underline;
     }
   }
-  
+
   .huge-cta {
     font-size: 6.5rem;
     margin: 0;
     font-family: var(--font-heading);
 
     &::after {
-      content: url('images/arrow-huge.svg');
+      content: url('static/images/ui/arrow-huge.svg');
       margin-left: 2rem;
     }
   }
@@ -481,6 +504,12 @@ Components
   .huge-cta-mobile {
     display: none;
   }
+}
+
+.chat-button {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
 }
 
 .main-footer {
@@ -657,7 +686,7 @@ Components
     }
 
     li::after {
-      content: url('images/plus.svg');
+      content: url('static/images/ui/plus.svg');
       position: absolute;
       top: 2.5rem;
       right: 0;
@@ -666,7 +695,7 @@ Components
 
     li.-active::after,
     li:hover::after {
-      content: url('images/arrow-down-inverted.svg');
+      content: url('static/images/ui/arrow-down-inverted.svg');
       top: 1.3rem;
     }
 
@@ -752,5 +781,9 @@ Components
 
   .main-footer {
     display: none;
+  }
+
+  .chat-button {
+    bottom: 2rem;
   }
 }

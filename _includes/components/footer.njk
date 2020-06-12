@@ -20,7 +20,7 @@
         {% if twitter %}
           <li>
             <a href="{{ twitter }}" title="Follow at.inc on Twitter">
-              <img src="static/images/icon-twitter.svg">
+              <img src="static/images/ui/icon-twitter.svg">
             </a>
           </li>
         {% endif %}
@@ -28,7 +28,7 @@
         {% if linkedin %}
           <li>
             <a href="{{ linkedin }}" title="Follow at.inc on LinkedIn">
-              <img src="static/images/icon-linkedin.svg">
+              <img src="static/images/ui/icon-linkedin.svg">
             </a>
           </li>
         {% endif %}
@@ -37,12 +37,14 @@
   </div>
 </footer>
 
-<div class="cui-embed" data-cui-uid="AJMaZH" data-cui-avatar="https://images.typeform.com/images/c6SsqWQ6g3Ci" data-cui-mode="pill" data-cui-pill-button-color="#D1FBB7"></div><script src="https://public-assets.typeform.com/confab/embed.js" async></script>
+<div class="cui-embed" data-cui-uid="AJMaZH" data-cui-avatar="//images.typeform.com/images/c6SsqWQ6g3Ci" data-cui-mode="pill" data-cui-pill-button-color="#D1FBB7"></div><script src="//public-assets.typeform.com/confab/embed.js" async></script>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.10.2/underscore-min.min.js" integrity="sha256-+AhYWF5Swwvejg1wLQveGkNhyO9WR8gyv6hyhuTTnv8=" crossorigin="anonymous"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/underscore.js/1.10.2/underscore-min.min.js" integrity="sha256-+AhYWF5Swwvejg1wLQveGkNhyO9WR8gyv6hyhuTTnv8=" crossorigin="anonymous"></script>
 
 {% set js %}
   {% include "assets/js/app.js" %}
 {% endset %}
   
-<script>{{ js | jsmin | safe }}</script>
+<script>
+  {{ js | jsmin | safe }}
+</script>
