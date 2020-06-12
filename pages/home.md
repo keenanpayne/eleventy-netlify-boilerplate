@@ -23,18 +23,18 @@ title: at.inc/
 permalink: /
 sectionFour:
   headline: Our Team
-  description: We provide strategic, financial, and operational support and ride
-    the wave alongside you from Day 1.
+  description: We ride the wave with you from day one, and provide strategic,
+    financial, and operational support all the way.
   team:
     - name: Nadav Eylath
       title: Founder, Managing Partner
       location: San Francisco, CA
       description: Nadav has worked with notable companies from his previous fun
-        including Netlify, Wecover, Honeybook, Future Family, Disclousures,
-        Peer5, and Betterhealh.
+        including Netlify, Wecover, Honeybook, Future Family, Disclosures,
+        Peer5, and Betterhealth.
       social:
-        twitter: twitter_username
-        linkedin: linkedin_username
+        twitter: enadav
+        linkedin: enadav
       image: /static/images/nadav.jpg
     - name: Maor Gordon
       title: Venture Partner
@@ -44,7 +44,16 @@ sectionFour:
       location: Lisbon
     - name: Dotan Schmidt
       title: Venture Partner
-      location: Lisbon
+      location: Paris
+    - name: Tal Siach
+      title: Venture Partner
+      location: Tel Aviv
+    - name: Pierre Edward
+      location: Zurich
+      title: Venture Partner
+    - name: Daniel Benor
+      title: Venture Partner
+      location: Sydney Australia
 date: 2016-01-01T00:00:00.000Z
 company:
   address: "268 Bush St. #4123 San Francisco, CA 94104"
