@@ -65,9 +65,10 @@ sectionThree:
   headline: Companies we support
   companies:
     - name: The Wild
-      industry: Enterprise Software
+      industry: ""
       type: Lead
       description: "Immersive collaboration platform for remote teams. "
+      website: https://www.thewild.com/
     - name: TheWild
       industry: Enterprise Software
       type: Lead
