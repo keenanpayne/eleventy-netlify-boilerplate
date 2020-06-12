@@ -56,7 +56,7 @@ navigation:
     location: "#companies-section"
     title: See the companies we support
   - text: People
-    location: "#people-section"
+    location: "#team-section"
     title: See the people we work with
   - text: Contact
     location: "#contact-section"
