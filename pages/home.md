@@ -9,7 +9,7 @@ sectionOne:
     Together, we’ll build momentum and create a world-class foundation to help you prosper and endure.
 sectionTwo:
   headline: Our guiding principles
-  description: We lead with conviction and invest as early as the idea phase.
+  description: ""
   principles:
     - We work with founders to gain a deep understanding of their vision.
     - We don’t invest in product. We invest in people we admire and we back
@@ -97,6 +97,7 @@ sectionThree:
       industry: Industry
       type: Fun Times
       description: This is a test company
+  description: We lead with conviction and invest as early as the idea phase.
 sectionFive:
   headline: We want to be there at the very beginning.
   description: >-
