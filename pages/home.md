@@ -67,36 +67,9 @@ sectionThree:
     - name: The Wild
       industry: ""
       type: Lead
-      description: "Immersive collaboration platform for remote teams. "
+      description: Immersive collaboration platform for remote teams.
       website: https://www.thewild.com/
-    - name: TheWild
-      industry: Enterprise Software
-      type: Lead
-      description: "Connecting IP and R&D teams on an IP learning platform for
-        enterprises that focus on innovation. "
-    - name: Beehive
-      industry: Enterprise Software
-      type: Lead
-      description: "Connecting IP and R&D teams on an IP learning platform for
-        enterprises that focus on innovation. "
-    - name: Cortex
-      industry: Enterprise Software
-      type: Lead
-      description: "Connecting IP and R&D teams on an IP learning platform for
-        enterprises that focus on innovation. "
-    - name: Test
-      industry: Industry
-      type: Investment Type
-      description: "Connecting IP and R&D teams on an IP learning platform for
-        enterprises that focus on innovation. "
-    - name: Another Test
-      industry: Industries
-      type: Lead
-      description: This is a test company
-    - name: Just one more
-      industry: Industry
-      type: Fun Times
-      description: This is a test company
+      mission: Help teams do their best work.
   description: We lead with conviction and invest as early as the idea phase.
 sectionFive:
   headline: We want to be there at the very beginning.
