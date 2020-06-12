@@ -70,6 +70,45 @@ sectionThree:
       description: Immersive collaboration platform for remote teams.
       website: https://www.thewild.com/
       mission: Help teams do their best work.
+    - name: SybarIP
+      type: Lead
+      description: Connecting IP and R&D teams on an IP learning platform, designed
+        for enterprises that focus on innovation.
+      mission: Help companies align product strategy with IP strategy.
+      website: https://www.sybarip.com/
+    - name: Beehive
+      type: Lead
+      description: Customer knowledge platform that enables companies to make
+        personalized and targeted actions.
+      website: https://www.beehive.ai/
+    - name: Shipin
+      type: Lead
+      description: Bringing real-time visibility to the maritime industry.
+      mission: Delivering Visibility Into, and Enhancing Productivity and Safety of
+        Maritime Transport.
+      website: https://www.shipin.ai/
+    - name: Cortex
+      type: Lead
+      description: Making it easy for developers to deploy machine learning models in
+        production.
+      mission: Empowering developers to build ML applications.
+      website: https://www.cortex.dev/
+    - name: Wizco
+      type: Lead
+      description: Coaching services platform for job seekers.
+      website: https://www.wizco.io/
+    - name: Balcony
+      type: Lead
+      description: Geo communication platform for enterprises and cities.
+      mission: Help organizations communicate awareness and mission-critical
+        information to those who need it when they need it most.
+      website: https://www.balcony.io/
+    - name: Tradologics
+      type: Lead
+      description: The traders’ cloud computing services.
+      mission: Help traders develop, test, run, and scale programmatic trading
+        strategies in the cloud.
+      website: http://tradologics.com/
   description: We lead with conviction and invest as early as the idea phase.
 sectionFive:
   headline: We want to be there at the very beginning.
