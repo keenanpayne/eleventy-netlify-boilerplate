@@ -238,6 +238,7 @@ Components
   }
 
   .logo {
+    flex: 1;
     font-size: 1.6rem;
     font-family: var(--font-medium);
     color: inherit;
@@ -246,13 +247,16 @@ Components
   }
 }
 
+.icon { 
+  display: none;
+}
+
 .menu {
-  .icon,
   .address,
-  .social-links {
+  .social-links { 
     display: none;
   }
-
+  
   .social-links { 
     a { 
       text-decoration: none;
@@ -630,14 +634,19 @@ Media Queries
   }
 
   .main-nav {
-    border-bottom: 0;
-    display: block;
     position: relative;
-    padding: 0;
     transition: height 0.3s ease;
 
     &.-open {
-      height: 100vh;
+      .menu {
+        background-color: white;
+        min-height: 100vh;
+        left: 0;
+        position: absolute;
+        top: var(--header-height);
+        visibility: visible;
+        width: 100%;
+      }
 
       .icon {
         .close {
@@ -658,29 +667,24 @@ Media Queries
         display: flex;
       }
     }
+  }
 
-    .logo {
-      margin-top: 0.5rem;
-      display: block;
-      padding-left: 2rem;
-      border-bottom: 1px solid var(--color-text);
-      padding-bottom: 0.25rem;
+  .menu { 
+    min-height: 0;
+    visibility: hidden;
+    width: 0;
+  }
+
+  .icon {
+    cursor: pointer;
+    display: block;
+
+    .close {
+      display: none;
     }
   }
 
   .menu {
-    .icon {
-      cursor: pointer;
-      display: block;
-      position: absolute;
-      top: 0.5rem;
-      right: 2rem;
-
-      .close {
-        display: none;
-      }
-    }
-
     .list {
       display: none;
       padding: 0;

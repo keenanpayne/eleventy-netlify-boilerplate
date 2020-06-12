@@ -3,16 +3,17 @@
 {% set linkedin = company.linkedin %}
 {% set address = company.address %}
 
-<nav class="main-nav">
+<header class="main-nav">
   <a class="logo" href="#intro" title="Top of the page">
     {{ metadata.title }}
   </a>
 
-  <div class="menu">
-    <div class="icon">
-      <img class="open" src="static/images/ui/menu-open.svg" title="Open Menu">
-      <img class="close" src="static/images/ui/menu-close.svg" title="Close Menu">
-    </div>
+  <div class="icon">
+    <img class="open" src="static/images/ui/menu-open.svg" title="Open Menu">
+    <img class="close" src="static/images/ui/menu-close.svg" title="Close Menu">
+  </div>
+  
+  <nav class="menu">
 
     <ul class="list">
       {% for item in navigation %}
@@ -49,5 +50,5 @@
         </div>
       {% endif %}
     </div>
-  </div>
-</nav>
+  </nav>
+</header>

@@ -39,7 +39,7 @@ window.onload = function() {
   */
 
   (() => {
-    document.querySelector('.menu .icon').addEventListener('click', function() {
+    document.querySelector('.icon').addEventListener('click', function() {
       const root = document.documentElement
       const mainNav = document.querySelector('.main-nav')
       const open = '-open'
