@@ -74,6 +74,7 @@ Grid System
 [grid~="between"] { justify-content: space-between; }
 [grid~="center"] { align-items: center; }
 [grid~="bottom"] { align-items: flex-end; }
+[grid~="top"] { align-items: flex-start; }
 
 [column] {
   flex: 1 1 auto;
@@ -159,10 +160,9 @@ body {
 }
 
 section {
-  /*max-height: 1000px;
-  min-height: 100vh;*/
-  overflow-x: hidden;
+  min-height: 100vh;
   padding-top: var(--spacing-section);
+  position: relative;
 }
 
 h2, h3 {
@@ -313,16 +313,16 @@ Components
 
 .main-header {
   padding-top: var(--spacing-section);
-  padding-bottom: 4rem;
+  padding-bottom: calc(var(--spacing-section) / 2);
 
   .go-down {
-    margin-top: 5rem;
+    bottom: 1.5rem;
+    position: absolute;
   }
 }
 
 .section-intro {
   max-width: 45ch;
-  margin: 0 0 2rem;
 }
 
 .principles-section {
@@ -411,7 +411,7 @@ Components
 
 .companies-descriptions {
   position: sticky;
-  top: 4rem;
+  top: var(--header-height);
 }
 
 .team-section-header {
@@ -566,17 +566,20 @@ Components
 }
 
 .company-description {
+  bottom: 0;
   position: absolute;
-  top: var(--spacing-section);
+  top: 0;
   left: 50%;
   transform: translate(-50%, -40%);
   width: 40ch;
   opacity: 0;
+  pointer-events: none;
   transition: all 0.3s ease;
 
   &.-visible {
     transform: translate(-50%, -50%);
     opacity: 1;
+    pointer-events: all;
   }
 
   a { 
@@ -609,7 +612,7 @@ Media Queries
 
 @media (max-width: 720px) {
   :root {
-    --spacing-section: calc(3rem + var(--header-height));
+    --spacing-section: var(--header-height);
   }
 
   body {
@@ -624,11 +627,6 @@ Media Queries
 
   .go-down {
     display: none;
-  }
-
-  .main-header {
-    padding-bottom: 5rem;
-    padding-top: 4rem;
   }
 
   .main-nav {

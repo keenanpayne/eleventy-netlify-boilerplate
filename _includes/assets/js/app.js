@@ -142,7 +142,7 @@ window.onload = function () {
 
       company.addEventListener('click', function () {
         const target = document.querySelector(`.company-description.-desktop.${this.dataset.target}`);
-        document.querySelector('.companies-illustration').style.opacity = 0; // Remove previous description and current item if they exist
+        document.querySelector('.companies-illustration').style.display = 'none'; // Remove previous description and current item if they exist
 
         const previouslySelectedDescription = document.querySelector('.company-description.-visible');
         const previouslySelectedItem = document.querySelector('.companies-list .-active'); // Remove previously selected items

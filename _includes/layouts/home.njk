@@ -4,7 +4,7 @@ section: page
 ---
 
 {# Section One #}
-<header id="intro" class="main-header" container="narrow">
+<section id="intro" class="main-header" container="narrow">
   <div grid="center">
     <div column="12 s7" style="padding-right: 0;">
       <h2>
@@ -23,10 +23,10 @@ section: page
     </div>
   </div>
 
-    <a href="#principles-section" title="See our principles">
-    <img class="go-down" src="static/images/ui/arrow-down.svg">
+  <a class="go-down" href="#principles-section" title="See our principles">
+    <img src="static/images/ui/arrow-down.svg">
   </a>
-</header>
+</section>
 
 {# Section Two #}
 <section id="principles-section" class="principles-section">
@@ -71,7 +71,7 @@ section: page
 {# Section Three #}
 <section id="companies-section" class="companies-section">
   <div container="narrow">
-    <div grid="center">
+    <div grid="top">
       <div column="12 s6">
         <h2>
           {{ sectionThree.headline | safe }}
