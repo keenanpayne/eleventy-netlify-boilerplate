@@ -64,11 +64,10 @@ navigation:
 sectionThree:
   headline: Companies we support
   companies:
-    - name: SybarIP
+    - name: The Wild
       industry: Enterprise Software
       type: Lead
-      description: "Connecting IP and R&D teams on an IP learning platform for
-        enterprises that focus on innovation. "
+      description: "Immersive collaboration platform for remote teams. "
     - name: TheWild
       industry: Enterprise Software
       type: Lead
