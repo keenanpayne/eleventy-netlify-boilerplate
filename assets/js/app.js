@@ -123,7 +123,7 @@ window.onload = function() {
 
     // For every section we add an event listener on scroll to update
     // the class of the nav bar. We also use underscore.debounce to
-    // limit the amount of functions calls each 200ms.
+    // limit the amount of functions calls
     sections.forEach(section => {
       const root = document.documentElement
       const navBar = document.querySelector('.main-nav')
@@ -136,7 +136,7 @@ window.onload = function() {
         } else {
           navBar.classList.remove(section.class)
         }
-      }, 25))
+      }, 5))
     })
   })();
 

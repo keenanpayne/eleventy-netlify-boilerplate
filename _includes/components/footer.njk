@@ -37,8 +37,6 @@
   </div>
 </footer>
 
-<div class="cui-embed" data-cui-uid="AJMaZH" data-cui-avatar="//images.typeform.com/images/c6SsqWQ6g3Ci" data-cui-mode="pill" data-cui-pill-button-color="#D1FBB7"></div><script src="//public-assets.typeform.com/confab/embed.js" async></script>
-
 <script src="//cdnjs.cloudflare.com/ajax/libs/underscore.js/1.10.2/underscore-min.min.js" integrity="sha256-+AhYWF5Swwvejg1wLQveGkNhyO9WR8gyv6hyhuTTnv8=" crossorigin="anonymous"></script>
 
 {% set js %}
@@ -47,4 +45,24 @@
   
 <script>
   {{ js | jsmin | safe }}
+</script>
+
+{# Third-Party Scripts #}
+<script>
+!function(){var analytics=window.analytics=window.analytics||[];if(!analytics.initialize)if(analytics.invoked)window.console&&console.error&&console.error("Segment snippet included twice.");else{analytics.invoked=!0;analytics.methods=["trackSubmit","trackClick","trackLink","trackForm","pageview","identify","reset","group","track","ready","alias","debug","page","once","off","on","addSourceMiddleware","addIntegrationMiddleware"];analytics.factory=function(e){return function(){var t=Array.prototype.slice.call(arguments);t.unshift(e);analytics.push(t);return analytics}};for(var e=0;e<analytics.methods.length;e++){var t=analytics.methods[e];analytics[t]=analytics.factory(t)}analytics.load=function(e,t){var n=document.createElement("script");n.type="text/javascript";n.async=!0;n.src="https://cdn.segment.com/analytics.js/v1/"+e+"/analytics.min.js";var a=document.getElementsByTagName("script")[0];a.parentNode.insertBefore(n,a);analytics._loadOptions=t};analytics.SNIPPET_VERSION="4.1.0";
+  analytics.load("uCYSllq3t1pfnDeH48jTxpMWuU67umhe");
+  analytics.page();
+  }}();
+</script>
+
+<div class="cui-embed" data-cui-uid="AJMaZH" data-cui-avatar="//images.typeform.com/images/c6SsqWQ6g3Ci" data-cui-mode="pill" data-cui-pill-button-color="#D1FBB7"></div><script src="//public-assets.typeform.com/confab/embed.js" async></script>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-166639770-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-166639770-1');
 </script>

@@ -11,9 +11,11 @@ section: page
         {{ sectionOne.headline | safe }}
       </h1>
 
-      <p class="section-intro">
-        {{ sectionOne.description | nl2br | safe }}
-      </p>
+      {% if sectionOne.description %}
+        <p class="section-intro">
+          {{ sectionOne.description | nl2br | safe }}
+        </p>
+      {% endif %}
     </div>
 
     <div column="12 s5">
@@ -34,6 +36,12 @@ section: page
         <h1>
           {{ sectionTwo.headline | safe }}
         </h1>
+
+        {% if sectionTwo.description %}
+          <p class="section-intro">
+            {{ sectionTwo.description | nl2br | safe }}
+          </p>
+        {% endif %}
       </div>
 
       <div column="12 s5">
@@ -44,6 +52,7 @@ section: page
               <span class="number">
                 0{{ loop.index }}
               </span>
+
               <span>
                 {{ principle }}
               </span>
@@ -56,6 +65,7 @@ section: page
     <div class="illustration-2">
       <img src="static/images/ui/illustration-2.svg">
     </div>
+  </div>
 </section>
 
 {# Section Three #}
@@ -66,6 +76,12 @@ section: page
         <h1>
           {{ sectionThree.headline | safe }}
         </h1>
+
+        {% if sectionThree.description %}
+          <p class="section-intro">
+            {{ sectionThree.description | nl2br | safe }}
+          </p>
+        {% endif %}
 
         <ul class="companies-list">
           {% for company in sectionThree.companies %}
@@ -81,30 +97,59 @@ section: page
         <img class="companies-illustration" src="static/images/ui/illustration-3.svg">
 
         {% for company in sectionThree.companies %}
-          <article class="company-description {{ company.name | replace(' ', '') }}">
+          {% set name = company.name %}
+          {% set type = company.type %}
+          {% set description = company.description %}
+          {% set industry = company.industry %}
+          {% set website = company.website %}
+          {% set mission = company.mission %}
+
+          <article class="company-description {{ name | replace(' ', '') }} -desktop">
             <h4>
-              About {{ company.name }}
+              About {{ name }}
             </h4>
 
-            <p>
-              {{ company.description }}
-            </p>
+            {% if description %}
+              <p>
+                {{ description }}
+              </p>
+            {% endif %}
 
-            <h4>
-              Industry
-            </h4>
+            {% if mission %}
+              <h4>
+                Mission
+              </h4>
 
-            <p>
-              {{ company.industry }}
-            </p>
+              <p>
+                {{ mission }}
+              </p>
+            {% endif %}
+
+            {% if industry %}
+              <h4>
+                Industry
+              </h4>
+
+              <p>
+                {{ industry }}
+              </p>
+            {% endif %}
 
             <h4>
               Investment Type
             </h4>
 
             <p>
-              {{ company.type }}
+              {{ type }}
             </p>
+
+            {% if website %}
+              <p>
+                <a href="{{ website }}" target="_blank" title="Visit {{ name }}">
+                  {{ website }}
+                </a>
+              </p>
+            {% endif %}
           </article>
         {% endfor %}
       </div>
@@ -120,10 +165,12 @@ section: page
         <h1>
           {{ sectionFour.headline | safe }}
         </h1>
-        
-        <p class="section-intro">
-          {{ sectionFour.description | nl2br | safe }}
-        </p>
+
+        {% if sectionFour.description %}
+          <p class="section-intro">
+            {{ sectionFour.description | nl2br | safe }}
+          </p>
+        {% endif %}
       </div>
     </div>
 
@@ -145,7 +192,7 @@ section: page
 
           <header>
             <h3>
-              {{ person.name }}
+              {{ name }}
             </h3>
 
             {% if social %}
@@ -155,7 +202,7 @@ section: page
               <ul class="social-links">
                 {% if twitter %}
                   <li>
-                    <a href="{{ twitter }}">
+                    <a href="{{ twitter }}" title="Follow {{ name }} on Twitter">
                       <img src="static/images/ui/icon-twitter.svg">
                     </a>
                   </li>
@@ -163,7 +210,7 @@ section: page
 
                 {% if linkedin %}
                   <li>
-                    <a href="{{ linkedin }}">
+                    <a href="{{ linkedin }}" title="Connect with {{ name }} on LinkedIn">
                       <img src="static/images/ui/icon-linkedin.svg">
                     </a>
                   </li>
@@ -207,9 +254,11 @@ section: page
         {{ sectionFive.headline | safe }}
       </h2>
 
-      <p class="section-intro">
-        {{ sectionFive.description | nl2br | safe }}
-      </p>
+      {% if sectionFive.description %}
+        <p class="section-intro">
+          {{ sectionFive.description | nl2br | safe }}
+        </p>
+      {% endif %}
 
       <p class="huge-cta-mobile">
         <a href="{{ sectionFive.link.location }}" title="{{ sectionFive.link.title }}">

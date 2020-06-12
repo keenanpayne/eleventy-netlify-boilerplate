@@ -44,7 +44,7 @@ collections:
         widget: "object"
         fields:
           - { label: "Headline", name: "headline", widget: "string" }
-          - { label: "Description", name: "description", widget: "markdown" }
+          - { label: "Description", name: "description", widget: "markdown", required: false }
       
       # Second Section
       - label: "Section Two"
@@ -52,6 +52,7 @@ collections:
         widget: "object"
         fields:
           - { label: "Headline", name: "headline", widget: "string" }
+          - { label: "Description", name: "description", widget: "markdown", required: false }
           - label: "Principles"
             name: "principles"
             widget: "list"
@@ -63,15 +64,17 @@ collections:
         widget: "object"
         fields:
           - { label: "Headline", name: "headline", widget: "string" }
+          - { label: "Description", name: "description", widget: "markdown", required: false }
           - label: "Companies"
             name: "companies"
             widget: "list"
-            summary: '{{ fields.name }}'
             fields:
               - { label: Name, name: name, widget: string }
-              - { label: Industry, name: industry, widget: string }
               - { label: Type, name: type, widget: string }
-              - { label: Description, name: description, widget: string }
+              - { label: Description, name: description, widget: string, required: false }
+              - { label: Mission, name: mission, widget: string, required: false }
+              - { label: Industry, name: industry, widget: string, required: false }
+              - { label: Website, name: website, widget: string, required: false }
 
       # Section Four
       - label: "Section Four"
@@ -79,11 +82,10 @@ collections:
         widget: "object"
         fields:
           - { label: "Headline", name: "headline", widget: "string" }
-          - { label: "Description", name: "description", widget: "string" }
+          - { label: "Description", name: "description", widget: "string", required: false }
           - label: "Team"
             name: "team"
             widget: "list"
-            summary: '{{ fields.name }}'
             fields:
               - { label: Name, name: name, widget: string }
               - { label: Title, name: title, widget: string }
@@ -93,6 +95,7 @@ collections:
                 name: social
                 widget: object
                 required: false
+                collapsed: true
                 fields:
                   - { label: Twitter, name: twitter, widget: string, required: false }
                   - { label: LinkedIn, name: linkedin, widget: string, required: false }
@@ -103,10 +106,11 @@ collections:
         widget: "object"
         fields:
           - { label: "Headline", name: "headline", widget: "string" }
-          - { label: "Description", name: "description", widget: "string" }
+          - { label: "Description", name: "description", widget: "markdown", required: false }
           - label: "Link"
             name: "link"
             widget: "object"
+            collapsed: true
             fields:
               - { label: Text, name: text, widget: string }
               - { label: Location, name: location, widget: string }
