@@ -1,23 +1,23 @@
 ---
 sectionOne:
   headline: With you from the start
-  description: >-
-    at.inc/ partners with founders at the earliest of stages to bring ideas to
-    life with capital investment and hands-on support.
+  description: >
+    at.inc/ partners with you at your company’s earliest stages, supporting your
+    mission with capital investment and hands-on guidance. 
 
 
-    Together, we build momentum and set a strong foundation to help you prosper and endure.
+    Together, we’ll build momentum and create a world-class foundation to help you prosper and endure.
 sectionTwo:
-  headline: Our guiding principles for operation
+  headline: Our guiding principles
   description: test
   principles:
-    - We gain a deep understanding of the founder’s vision.
-    - We don’t invest in product. We invest in people we admire and back their
-      mission 100%.
-    - '"We take an owner’s approach: we roll up our sleeves and share in the
-      responsibility of building an impactful company.'
-    - We act with the highest integrity, with total empathy for founders, LPs,
-      and partners.
+    - We work with founders to gain a deep understanding of their vision.
+    - We don’t invest in product. We invest in people we admire and we back
+      their mission 100%.
+    - We roll up our sleeves and share the responsibility of building a dynamic,
+      impactful company.
+    - We act with total empathy for founders, LPs, and partners while
+      maintaining the highest standards of integrity.
 layout: layouts/home.njk
 title: at.inc/
 permalink: /
