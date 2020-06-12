@@ -6,10 +6,10 @@ section: page
 {# Section One #}
 <header id="intro" class="main-header" container="narrow">
   <div grid="center">
-    <div column="12 s7">
-      <h1>
+    <div column="12 s7" style="padding-right: 0;">
+      <h2>
         {{ sectionOne.headline | safe }}
-      </h1>
+      </h2>
 
       {% if sectionOne.description %}
         <p class="section-intro">
@@ -18,7 +18,7 @@ section: page
       {% endif %}
     </div>
 
-    <div column="12 s5">
+    <div column="12 s5" style="padding-right: 0;">
       <img class="-fluid" src="static/images/ui/illustration-1.svg">
     </div>
   </div>
@@ -33,9 +33,9 @@ section: page
   <div container="narrow">
     <div grid>
       <div column="12 s7">
-        <h1>
+        <h2>
           {{ sectionTwo.headline | safe }}
-        </h1>
+        </h2>
 
         {% if sectionTwo.description %}
           <p class="section-intro">
@@ -73,9 +73,9 @@ section: page
   <div container="narrow">
     <div grid="center">
       <div column="12 s6">
-        <h1>
+        <h2>
           {{ sectionThree.headline | safe }}
-        </h1>
+        </h2>
 
         {% if sectionThree.description %}
           <p class="section-intro">
@@ -86,7 +86,7 @@ section: page
         <ul class="companies-list">
           {% for company in sectionThree.companies %}
             <li data-target="{{ company.name | replace(' ', '') }}">
-              <span>at.inc/{{ company.name }}</span>
+              <span class="company-name">at.inc/{{ company.name }}</span>
               <small>{{ company.type }}</small>
             </li>
           {% endfor %}
@@ -162,9 +162,9 @@ section: page
   <div grid>
     <div column="12 s7">
       <div class="team-section-header">
-        <h1>
+        <h2>
           {{ sectionFour.headline | safe }}
-        </h1>
+        </h2>
 
         {% if sectionFour.description %}
           <p class="section-intro">
@@ -191,9 +191,9 @@ section: page
           {% endif %}
 
           <header>
-            <h3>
+            <h4>
               {{ name }}
-            </h3>
+            </h4>
 
             {% if social %}
               {% set twitter = social.twitter %}
@@ -250,9 +250,9 @@ section: page
 <section id="contact-section" class="contact-section" container="narrow">
   <div grid="center">
     <div column="12 s5 #2 s#1">
-      <h2>
+      <h3>
         {{ sectionFive.headline | safe }}
-      </h2>
+      </h3>
 
       {% if sectionFive.description %}
         <p class="section-intro">
@@ -267,12 +267,12 @@ section: page
       </p>
     </div>
 
-    <a href="{{ sectionFive.link.location }}" column="12 s7 #1 s#2" class="-right" title="{{ sectionFive.link.title }}">
+    <div column="12 s7 #1 s#2" class="-right">
       <img class="-fluid" src="static/images/ui/illustration-4.svg">
 
-      <p class="huge-cta">
+      <a href="{{ sectionFive.link.location }}" title="{{ sectionFive.link.title }}" class="huge-cta">
         {{ sectionFive.link.text }}
-      </p>
-    </a>
+      </a>
+    </div>
   </div>
 </section>
