@@ -53,13 +53,13 @@ company:
   linkedin: atinc
 navigation:
   - text: Companies
-    location: "#companies"
+    location: "#companies-section"
     title: See the companies we support
   - text: People
-    location: "#people"
+    location: "#people-section"
     title: See the people we work with
   - text: Contact
-    location: "#contact"
+    location: "#contact-section"
     title: Get in touch with us
 sectionThree:
   headline: Companies we support
