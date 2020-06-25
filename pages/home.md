@@ -57,7 +57,7 @@ sectionFour:
 date: 2016-01-01T00:00:00.000Z
 company:
   address: "268 Bush St. #4123 San Francisco, CA 94104"
-  press: "#press"
+  press: static/press-kit.zip
   twitter: atinc
   linkedin: atinc
 navigation:
